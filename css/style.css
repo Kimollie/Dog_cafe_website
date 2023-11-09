@@ -76,7 +76,8 @@ li a:hover {
 }
 
 main {
-    background: #000 center url("/img/paw_background.jpg") no-repeat;
+    background-color: beige;
+    background-image: url("/img/paw_background.jpg");
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
