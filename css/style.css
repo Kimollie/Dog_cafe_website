@@ -1,7 +1,18 @@
+@font-face {
+    font-family: Agbalumo;
+    src: url("Agbalumo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Sriracha;
+    src: url("Sriracha-Regular.ttf") format("truetype");
+}
+
 html {
     font-family: Sriracha, serif;
     font-size: smaller;
-    background-color: #808080;
+    background: rgb(247,200,115);
+    background: radial-gradient(circle, rgba(247,200,115,1) 0%, rgba(233,228,148,1) 100%);
 }
 
 body {
@@ -14,23 +25,26 @@ body {
 }
 
 header {
-    background-color: #F7C873;
+    background-color: rgba(247,200,115,30%);
     padding: 1rem;
     display: flex;
+    border-radius: 10px;
 }
 
 h1 {
     font-family: Agbalumo, sans-serif;
-    width: 80%;
-    padding-left: 2rem;
+
+    padding-left: 1rem;
 }
 
 header img {
-    width: 10%
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 nav {
-    background-color: #434343;
+
 }
 
 ul {
@@ -43,11 +57,14 @@ ul {
 
 li {
     width: calc(100% / 3);
+    background-color: rgba(67,67,67,80%);
+    border-radius: 10px;
 }
 
 li a {
     color: #F8F8F8;
     width: 100%;
+    text-transform: uppercase;
     display: block;
     text-align: center;
     line-height: 3rem;
@@ -55,26 +72,42 @@ li a {
 }
 
 li a:hover {
-    background-color: #808080;
+    background-color: #434343;
 }
 
 main {
-    background-color: #FAEBCD;
+    background: #000 center url("/img/paw_background.jpg") no-repeat;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(238,238,235,30%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 h2 {
     font-family: Agbalumo, serif;
+    padding: 0.5rem 3rem;
+}
+
+#main_img {
+    border-radius: 10px 10px 10px 10px;
     width: 100%;
-    text-align: center;
+    height: auto;
+    margin: auto;
+}
+
+p {
+    padding: 1rem 3rem;
 }
 
 article {
@@ -83,16 +116,7 @@ article {
     box-sizing: border-box;
 }
 
-h3 {
-    font-family: Agbalumo, serif;
-}
-
-figure {
-    float: left;
-    margin: 0 1rem 1rem 0;
-}
-
-img {
+.service_img {
     border-radius: 10px 10px 10px 10px;
     width: 100%;
     height: auto;
@@ -104,24 +128,21 @@ figcaption {
     color: #595959;
 }
 
-#contact {
-    display: inline-block;
+#map_img {
+    border-radius: 10px 10px 10px 10px;
+    width: 85%;
+    height: auto;
+    margin: auto;
 }
 
 @media screen and (min-width: 769px) {
     .container {
-        width: 90%;
-    }
-    section {
-        width: 80%;
+        width: 95%;
     }
     article {
         width: calc(100% / 3);
     }
-    li {
-        width: calc(100% / 3);
-    }
-    #map {
+    #map_img {
     width: 40%;
     }
 }
