@@ -20,7 +20,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: beige;
-    background-image: url("/img/Dog_face_pattern_and_bones.jpg");
+    background-image: url("~kimtran/website1/img/Dog_face_pattern_and_bones.jpg");
     background-size: cover;
 }
 
