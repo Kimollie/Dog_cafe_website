@@ -87,7 +87,6 @@ section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
     border-radius: 10px;
     justify-content: center;
     text-align: center;
@@ -107,6 +106,15 @@ h2 {
 
 p {
     padding: 1rem 3rem;
+}
+
+.services_des {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 article {
